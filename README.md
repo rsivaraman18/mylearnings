@@ -1,2 +1,2 @@
 # mylearnings
- “Don't argue with a fool, future will teach him some lessons” 
+An investment in knowledge pays the best interest.

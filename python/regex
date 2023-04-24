@@ -1,0 +1,46 @@
+"""Points to remeber
+1)Always import regex.
+2)Case sensitive
+3)
+"""
+
+
+
+#1)Check if the string starts with "Siva" 
+def eg1():
+    import re
+    txt ="Siva is an Engineer"
+    x = re.search("Siva" ,txt)
+    if x:
+        print("YES! We have a match!")
+    else:
+      print("No match")
+        
+#2)Check if the string ends with "tamilnadu" 
+
+def eg2():
+    import re
+    txt = "Chennai is the capital of tamilnadu"
+    #x = re.search(".tamilnadu", txt)
+    x = re.search(".*tamilnadu$", txt)
+    if x:
+      print("YES! We have a match!")
+    else:
+      print("No match")
+      
+#3)Check if the string starts with "Every"  and ends with "morning"
+def eg3():
+    import re
+    txt = "Every winter season we have rain at morning"
+    x = re.search("^Every.*morning$", txt)
+    if x:
+      print("YES! We have a match!")
+    else:
+      print("No match")
+ 
+ 
+ 
+    
+eg1()
+eg2()
+eg3()

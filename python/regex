@@ -50,6 +50,18 @@ def eg5():
    txt = "The rain in Spain"
    x = re.search("\s", txt)
 
+def eg6():
+
+   import re
+
+   txt = "The rain in Spain"
+   x = re.search(r"\bS\w+", txt)
+   print(x.group())
+
+
+
+
+
 print("The first white-space character is located in position:", x.start())
 eg1()
 eg2()

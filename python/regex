@@ -39,8 +39,18 @@ def eg3():
       print("No match")
  
  
- 
-    
+def eg4():  
+    import re
+    txt = "The rain in Spain"
+    x = re.search("^The.*Spain$", txt)
+
+def eg5():
+   import re
+
+   txt = "The rain in Spain"
+   x = re.search("\s", txt)
+
+print("The first white-space character is located in position:", x.start())
 eg1()
 eg2()
 eg3()

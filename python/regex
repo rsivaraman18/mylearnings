@@ -127,3 +127,10 @@ def eg6():
    txt = "The rain in Spain"
    x = re.search(r"\bS\w+", txt)
    print(x.group())
+
+
+def eg7():
+    import re
+    txt = "The rain in Spain"
+    x = re.sub("\s", "9", txt)
+    print(x)

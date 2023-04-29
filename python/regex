@@ -117,34 +117,29 @@ def eg4():
 
 def eg5():
    import re
-
    txt = "The rain in Spain"
    x = re.search("\s", txt)
 
 def eg6():
-
    import re
-
    txt = "The rain in Spain"
    x = re.search(r"\bS\w+", txt)
    print(x.group())
-
 
 def eg7():
     import re
     txt = "The rain in Spain"
     x = re.sub("\s", "9", txt)
     print(x)
+    
 def eg8():
     import re
-
     txt = "The rain in Spain"
     x = re.sub("\s", "9", txt, 2)
     print(x)
 
 def eg9():
     import re
-
     txt = "The rain in Spain"
     x = re.search("ai", txt)
     print(x) #this will print an object

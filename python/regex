@@ -154,3 +154,8 @@ def eg10():
     # out ['The', 'rain', 'in', 'Spain']
     
 def eg11():
+    import re
+
+    txt = "The rain in Spain"
+    x = re.split("\s", txt, 1)
+    print(x)

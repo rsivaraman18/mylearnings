@@ -143,3 +143,12 @@ def eg9():
     txt = "The rain in Spain"
     x = re.search("ai", txt)
     print(x) #this will print an object
+
+def eg10():
+    import re
+
+    #Split the string at every white-space character:
+
+    txt = "The rain in Spain"
+    x = re.split("\s", txt)
+    print(x)

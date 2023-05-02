@@ -13,6 +13,8 @@ Common Operators in Python
 These are Empty in Python -->  None ,False , 0 ,''/"" ,(Empty string - two single quotes/double quotes)
 
 
-
+Implict Type Conversion   
+case 1: Converts a int to float.
+print(1 + 1.0 +1.0 )  --> 3.0 
 
 

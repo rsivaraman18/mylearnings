@@ -15,6 +15,9 @@ These are Empty in Python -->  None ,False , 0 ,''/"" ,(Empty string - two singl
 
 Implict Type Conversion   
 case 1: Converts a int to float.
-print(1 + 1.0 +1.0 )  --> 3.0 
+print(1 + 1.0 +1.0 )  --> 3.0 float
 
+Explict Conversion:
+case1 : We need to convert it before
+print(1 + int(1.0) )    --> 2  int
 

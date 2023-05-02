@@ -21,3 +21,9 @@ Explict Conversion:
 case1 : We need to convert it before
 print(1 + int(1.0) )    --> 2  int
 
+
+To avoid dangerous result:
+Convert data to requred format.
+Integer   --> int(any data)
+String    --> str(any data)
+Boolean   --> bool(any data)

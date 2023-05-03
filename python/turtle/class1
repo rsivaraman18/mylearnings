@@ -19,5 +19,19 @@ def circle1( ):
   time.sleep(5)           # hold for certain time
 
 
+# To Draw a circle with user input data
+def circle2( ):
+  import turtle       
+  import time  
+  
+  circle_rad   = int(input("enter your radius : " ))  
+  circle_color = input("color of circle : " )
+  
+  alex = turtle.Turtle()        # create a turtle named alex
+  alex.shape("turtle")          # alex looks like a turtle
+  alex.color(circle_color)      # alex has a color
+  alex.circle(circle_rad)
+  time.sleep(5) 
+
 
   

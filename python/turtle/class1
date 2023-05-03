@@ -46,8 +46,8 @@ def rect1( ):
     wn = turtle.Screen()    # creates a graphics window
     wn.setup(400,400) 
              
-    rectangle_width=150     
-    rectangle_height=80
+    rectangle_width=150     #width = 150
+    rectangle_height=80     #height = 80
 
     alex = turtle.Turtle()  
     alex.shape("turtle") 

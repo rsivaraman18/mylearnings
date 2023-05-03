@@ -2,8 +2,11 @@
 # So we can use it using the command Import turtle.
 # it is graphical represantational of a structure.
 
+Problem Cases:
+1.To Draw a circle with 50 radius.
+2.To Draw a circle with user input data
 
-# To Draw a circle with 50 radius.
+#Case 1: To Draw a circle with 50 radius.
 def circle1( ):
   import turtle       
   import time
@@ -19,7 +22,7 @@ def circle1( ):
   time.sleep(5)           # hold for certain time
 
 
-# To Draw a circle with user input data
+#Case 2:To Draw a circle with user input data
 def circle2( ):
   import turtle       
   import time  

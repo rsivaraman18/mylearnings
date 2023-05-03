@@ -84,4 +84,17 @@ def square1( ):
 
 square1( )
 
-  
+case 5: :To draw a Triangle with radius 100     
+def triangle( ):
+    wn = turtle.Screen()    # creates a graphics window
+    wn.setup(400,400)
+    side = 100
+    alex = turtle.Turtle()
+    alex.shape("turtle")
+
+    alex.right(180)
+    alex.forward(side)
+    alex.right(120)
+    alex.forward(side)
+    alex.right(120)
+    alex.forward(side)

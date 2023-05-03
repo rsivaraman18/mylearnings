@@ -7,6 +7,9 @@ Problem Cases:
 2.To Draw a circle with user input data
 3.To draw a Rectangle with width = 150 & height = 80.
 
+
+
+
 #Case 1: To Draw a circle with 50 radius.
 def circle1( ):
   import turtle       
@@ -62,5 +65,22 @@ def rect1( ):
     time.sleep(5) 
 
 rect1( )
+
+case 4:To draw a square with radius 100 using for loop 
+def square1( ):
+  import turtle       
+  
+  wn = turtle.Screen()    # creates a graphics window
+  wn.setup(400,400)
+  side = 100
+  alex = turtle.Turtle()
+  alex.shape("turtle")
+  
+  for i in range(1,5 ):
+      alex.forward(side)
+      alex.right(90)
+    
+
+square1( )
 
   

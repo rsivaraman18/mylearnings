@@ -36,5 +36,6 @@ def circle2( ):
   alex.circle(circle_rad)
   time.sleep(5) 
 
+#Case 3: To draw a Rectangle with width = 150 & height = 80.
 
   

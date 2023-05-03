@@ -5,6 +5,7 @@
 Problem Cases:
 1.To Draw a circle with 50 radius.
 2.To Draw a circle with user input data
+3.To draw a Rectangle with width = 150 & height = 80.
 
 #Case 1: To Draw a circle with 50 radius.
 def circle1( ):
@@ -37,5 +38,29 @@ def circle2( ):
   time.sleep(5) 
 
 #Case 3: To draw a Rectangle with width = 150 & height = 80.
+
+def rect1( ):
+    import turtle
+    import time
+    
+    wn = turtle.Screen()    # creates a graphics window
+    wn.setup(400,400) 
+             
+    rectangle_width=150     
+    rectangle_height=80
+
+    alex = turtle.Turtle()  
+    alex.shape("turtle") 
+        
+    alex.forward(rectangle_width)
+    alex.right(90)
+    alex.forward(rectangle_height)
+    alex.right(90)
+    alex.forward(rectangle_width)
+    alex.right(90)
+    alex.forward(rectangle_height)
+    time.sleep(5) 
+
+rect1( )
 
   

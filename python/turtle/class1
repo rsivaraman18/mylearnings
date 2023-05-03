@@ -3,3 +3,21 @@
 # it is graphical represantational of a structure.
 
 
+# To Draw a circle with 50 radius.
+def circle1( ):
+  import turtle       
+  import time
+  
+  
+  #circle_rad = int(input("enter your radius : " ))  #Enter radius
+  circle_rad = 50
+
+  alex = turtle.Turtle()  # create a turtle named alex
+  alex.shape("turtle")    # alex looks like a turtle
+  alex.color('red')       # alex has a color
+  alex.circle(circle_rad)
+  time.sleep(5)           # hold for certain time
+
+
+
+  

@@ -9,6 +9,7 @@ Problem Cases:
 4:To draw a square with radius 100 using for loop 
 5.To draw a Triangle with radius 100  
 6.To draw a hexagon with radius 100.
+7.To draw a inverted triangle with radius 100.
 
 
 
@@ -119,7 +120,7 @@ def hexagon( ):
 hexagon( )
 
 
-
+case 7 : To draw a inverted triangle with radius 100.
 def invtriangle( ):
     wn = turtle.Screen()    
     wn.setup(400,400)

@@ -117,3 +117,18 @@ def hexagon( ):
     
 
 hexagon( )
+
+
+
+def invtriangle( ):
+    wn = turtle.Screen()    
+    wn.setup(400,400)
+    side = 100
+    alex = turtle.Turtle()
+    alex.shape("turtle")
+    
+    for i in range(1,4):
+        alex.forward(side)
+        alex.right(120)
+    
+invtriangle( )

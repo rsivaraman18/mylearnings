@@ -133,3 +133,6 @@ def invtriangle( ):
         alex.right(120)
     
 invtriangle( )
+
+
+

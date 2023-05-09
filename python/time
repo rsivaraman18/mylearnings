@@ -1,0 +1,13 @@
+Function                --> Explanation
+
+time.gmtime()           --> Returns the current GM time
+
+time.localtime()        --> Returns the current time based on the current locality
+
+time.strftime(t,format) --> Converts t to a string as specified by the format argument and returns it.
+                            Where t is the time returned by time.gmtime() or time.localtime(). 
+                            It is optional, default value is current time as returned by time.localtime()
+
+datetime.datetime.strptime (date_string, format)  --> Converts a date string in the specified format to a datetime value and returns it.
+
+datetime.date.today()   --> Returns the current local date.

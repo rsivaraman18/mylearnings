@@ -1,13 +1,41 @@
-Function                --> Explanation
+Function                    --> Explanation
 
-time.gmtime()           --> Returns the current GM time
+1) time.gmtime()            --> Returns the current GM time
 
-time.localtime()        --> Returns the current time based on the current locality
+2) time.localtime()         --> Returns the current time based on the current locality
 
-time.strftime(t,format) --> Converts t to a string as specified by the format argument and returns it.
-                            Where t is the time returned by time.gmtime() or time.localtime(). 
-                            It is optional, default value is current time as returned by time.localtime()
+3) time.strftime(t,format)  --> Converts t to a string as specified by the format argument and returns it.
+                                Where t is the time returned by time.gmtime() or time.localtime(). 
+                                It is optional, default value is current time as returned by time.localtime()
 
-datetime.datetime.strptime (date_string, format)  --> Converts a date string in the specified format to a datetime value and returns it.
+4) datetime.datetime.strptime (date_string, format)  --> Converts a date string in the specified format to a datetime value and returns it.
 
-datetime.date.today()   --> Returns the current local date.
+5) datetime.date.today()    --> Returns the current local date.
+
+************************************************************************************************************************************
+import time
+import datetime
+
+#To get current GM time
+print("Current GM time:",time.gmtime())
+#This returns a time structure containing 9 values - year, month,day, hour, minute, sec, day of week, day of year and daylight savings.
+
+#To get current local time
+print("Current local time:",time.localtime())
+#This also returns a time structure containing 9 values - year, month,day, hour, minute, sec, day of week, day of year and daylight savings.
+
+#To extract today's date in a specified string format
+print("Today's date using time module",time.strftime("%m-%m/%Y"))
+
+#Python additionally allows use of  datetime module
+#Prints today's date
+print("Today's date using datetime module:", datetime.date.today())
+
+#To extract today's date in a specified string format
+print("Today's date (dd/mm/yyyy) using datetime module:", datetime.date.today().strftime("%d/%m/%Y"))
+
+
+#To convert a date in string format to datetime value
+print("Today's date (dd/mm/yyyy):", datetime.datetime.strptime("17/04/1","%y/%d/%m"))
+
+*******************************************************************************************************************************************

@@ -1,0 +1,22 @@
+Pbm 1: To find the common letter in two statements & join them without white space.
+
+'''
+Sample Input 1  : "I like Python"
+Sample Input 2  : "Java is a very popular language"
+Expected output : lieyon
+'''
+
+def find_common_characters(msg1,msg2):
+    new = []
+    for let in msg1:
+       if let in msg2:
+           new.append(let)
+    s1 =  "".join(new)
+    
+    return s1.replace(' ','')
+           
+    
+msg1="I like Python"
+msg2="Java is a very popular language"
+common_characters=find_common_characters(msg1,msg2)
+print(common_characters)

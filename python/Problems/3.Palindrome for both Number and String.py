@@ -1,4 +1,4 @@
-'''This is used to check both word or number is a PALINDROME'''
+'''This is used to check both word or number is a PALINDROME '''
 
 
 word = input("Enter any word to check for Palindrome : ")

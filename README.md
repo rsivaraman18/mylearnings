@@ -1,2 +1,2 @@
 # mylearnings
-An investment in knowledge pays the best interest.
+An investment in knowledge pays the best interest..

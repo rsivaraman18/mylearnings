@@ -1,4 +1,4 @@
-'''This is used to check Palindrome Number between Given range'''
+'''This is used to check Palindrome Number between Given range.'''
 Lower = int(input("Enter the lower limit value : ")) 
 Upper = int(input("Enter the Upper limit value : ")) 
 

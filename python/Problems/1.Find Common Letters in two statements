@@ -20,3 +20,4 @@ msg1="I like Python"
 msg2="Java is a very popular language"
 common_characters=find_common_characters(msg1,msg2)
 print(common_characters)
+print()

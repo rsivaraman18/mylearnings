@@ -5,7 +5,7 @@ def square1(n):
         for col in range(1,n+1):
             print(col,end='')
         print()
-    print('******************')   
+    print('*********************')   
 
 
 

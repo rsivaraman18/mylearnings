@@ -14,3 +14,5 @@ def triangle(n):
 
 triangle1(5)
 triangle(5)
+
+print('********')

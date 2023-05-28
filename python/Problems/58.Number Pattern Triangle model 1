@@ -6,3 +6,14 @@ def model2(n):
             print(col,end='')
         print()
     print('*************')
+ 
+ 
+ 
+def model3(n):
+    print('Triangle Model 3')
+    for row in range(n,0,-1):
+        for col in range(1,row+1):
+            print(row,end='')
+        print()
+    print('*************')
+

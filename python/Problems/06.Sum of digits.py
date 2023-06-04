@@ -4,6 +4,7 @@ def sumofdigits():
     total = 0
     for i in range(0,len(temp)):
         total = total + int(temp[i])
+        
     print(total)
 
 sumofdigits() 

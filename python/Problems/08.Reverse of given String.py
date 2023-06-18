@@ -17,7 +17,7 @@ def mtd2():
         i=i-1
     print('Given string:',s)
     print('Reversed string:',name)
-    print('*'*25)
+    print('* '*25)
 
 
 def mtd3():

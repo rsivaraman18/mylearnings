@@ -28,7 +28,6 @@ def mtd3():
 
     for each in s1:
         l1.append(each[::-1])
-
     rev= ' '.join(l1)
 
     print('Given sentence:',s)    

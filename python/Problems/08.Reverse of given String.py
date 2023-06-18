@@ -1,6 +1,5 @@
 s='computer programmer'
 
-
 def mtd1():
     print("Using Slicing ")
     res=s[::-1]

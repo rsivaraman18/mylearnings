@@ -8,6 +8,7 @@ split	--> Returns a list where the string has been split at each match
 sub	    --> Replaces one or many matches with a string
  
 
+
 [arn]	    --> Returns a match where one of the specified characters (a, r, or n) is present	
 [a-n]	    --> Returns a match for any lower case character, alphabetically between a and n	
 [^arn]	    --> Returns a match for any character EXCEPT a, r, and n	

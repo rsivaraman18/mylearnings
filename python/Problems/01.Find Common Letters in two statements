@@ -1,6 +1,6 @@
 Pbm 1: To find the common letter in two statements & join them without white space.
  
-'''    
+'''     
 Sample Input 1  : "I like Python"
 Sample Input 2  : "Java is a very popular language"
 Expected output : lieyon

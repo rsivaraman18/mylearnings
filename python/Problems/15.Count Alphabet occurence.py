@@ -50,6 +50,17 @@ def mtd2():
     print('*'*35)
 
 
+def mtd3():
+        word='aaaabbbcczsssss'  # Required Output : a4b3c2z1s5
+        from collections import Counter
+        word_count = Counter(word)
+        
+        result = ''
+        for key,val in word_count.items():
+            result  = result + key  + str(word_count[key]) 
+        print('Result String:',result)
+
 
 mtd1()
 mtd2()
+mtd3()

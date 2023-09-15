@@ -59,5 +59,20 @@ def mtd2():
 
 mtd2()
 
+def mtd3():
+A = 'note'
+B='books'
 
+Al,Bl = Len(A),Len(B)
+Big = Al If (Al>Bl) Else Bl
+
+Res=''
+For I In Range(0,Big):
+	If (Al>0):
+		Res = Res + A[I]
+	If (Bl>0):
+		Res = Res + B[I]
+	Al = Al-1
+	Bl = Bl-1
+	Print(Res)
 

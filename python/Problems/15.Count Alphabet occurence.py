@@ -1,5 +1,5 @@
 # ()
-print("Count alphabets occurence ")  
+print("Count alphabets occurence ") 
 
 def mtd1():
         

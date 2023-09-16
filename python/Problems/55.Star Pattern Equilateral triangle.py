@@ -5,7 +5,7 @@ def triangle1(n):
         print(' '*(row) , ' *'*(n-row+1))
          
 
-  
+   
 
 def triangle(n):
     print('Triangle')

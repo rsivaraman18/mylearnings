@@ -1,6 +1,6 @@
 # ()
 print("Count alphabets occurence ") 
-
+ 
 def mtd1():
         
     word='aaaabbbccz' #4a3b2c1z

@@ -1,6 +1,6 @@
 # paste this in a python interpreter to execute the code.
 #this is using class method
-
+ 
 from flask import Flask
 from flask_restful import Resource ,Api,request
 

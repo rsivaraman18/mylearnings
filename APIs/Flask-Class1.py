@@ -1,6 +1,14 @@
+''' To use this API's Create
+    Database - Check.db
+    Table Name - Student
+    Column - ID,Name,Age,City
+'''
+
+
+
+
+
 from flask import Flask ,jsonify
-
-
 app = Flask(__name__)
 print('I am ready siva')
 

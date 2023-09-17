@@ -1,5 +1,3 @@
-#()
-
 x=10
 def myname(a,b=x):
     global a

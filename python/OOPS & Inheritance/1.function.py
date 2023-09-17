@@ -1,4 +1,3 @@
-#()
 a=100
 def callme():
     global a

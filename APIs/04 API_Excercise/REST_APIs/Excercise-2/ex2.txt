@@ -1,0 +1,6 @@
+1.Create a Database from Python using mysql.connector
+2 Connect MySQl Database with Python.
+3.Create a table using python command.
+4.Using General method all route links are created.
+5.Purely sql commands are used to execute the GET,POST,PUT,DELETE.
+6.POSTman Application used to test the link.

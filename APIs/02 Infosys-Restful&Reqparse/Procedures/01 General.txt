@@ -1,0 +1,25 @@
+# paste this in a python interpreter to execute the code.
+
+from flask import Flask
+from flask_restful import Resource , Api
+
+app = Flask (__name__ )
+api = Api (app)
+
+class Helloworld ( Resource):
+    def get (self):
+        return {'msg':"helloworld from GET method"}
+    
+    def post ( self):
+        return {'msg': 'Hello from POST method'}
+    
+    def put (self):
+        return {'msg':"helloworld from PUT method"}
+    
+    def delete ( self):
+        return {'msg': 'Hello from DELETE method'}
+
+api.add_resource (Helloworld,'/' )
+
+if __name__ == "__main__":
+    app.run ( debug=True)

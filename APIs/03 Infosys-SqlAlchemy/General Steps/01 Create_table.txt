@@ -1,0 +1,53 @@
+# creting Tables USing SQLAlchemy and MYSQl
+# paste this in python interpreter to create table.
+# Before Executing in Python ,enter this command in Mysql workbench --> create database bookshop;
+'''
+Pip install flask
+pip install flask_restful
+'''
+from flask import Flask,request
+from flask_sqlalchemy import SQLAlchemy
+  
+app = Flask(__name__)
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:siva@localhost/bookshop'
+'''
+user = 'root'
+password = 'siva'
+host = '127.0.0.1'
+port = 3306
+database = 'bookshop'
+app.config['SQLALCHEMY_DATABASE_URI'] ="mysql+mysqlconnector://{0}:{1}@{2}:{3}/{4}".format(
+         user, password, host, port, database)
+'''
+
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False    #optional
+
+db = SQLAlchemy (app)
+
+class Book(db.Model):
+    bid      = db.Column( db.String(20),  primary_key=True)
+    title    = db.Column( db.String(255), nullable=False)
+    author   = db.Column( db.String(255), nullable=False)
+    price    = db.Column( db.Float() )
+    quantity = db.Column( db.Integer() )
+
+    def __init__(self,bid,title,author,price,quantity):
+        self.bid        = bid
+        self.title      = title
+        self.author     = author
+        self.price      = price
+        self.quantity   = quantity
+
+with app.app_context():
+    db.create_all()
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+
+
+
+
+
+

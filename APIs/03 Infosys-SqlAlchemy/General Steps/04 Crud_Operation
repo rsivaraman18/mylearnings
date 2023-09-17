@@ -1,0 +1,158 @@
+# complete CRUD operation 
+from flask import Flask,request,jsonify
+from flask_sqlalchemy import SQLAlchemy
+from flask_restful import Resource ,Api ,reqparse ,abort,marshal_with,fields
+print ( "Hii siva I am ready" )
+
+app = Flask (__name__)
+
+app.config['BUNDLE_ERRORS'] = True          #shows multiple error at same time
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:siva@localhost/bookshop'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False    #optional
+
+api = Api(app)             #connecting flask with restful
+db = SQLAlchemy(app)    #connecting flask with sqlalchemmy
+
+# To create table in db:bookshop
+class Mybook(db.Model):
+    bid      = db.Column( db.String(20),  primary_key=True)
+    title    = db.Column( db.String(255), nullable=False)
+    author   = db.Column( db.String(255), nullable=False)
+    price    = db.Column( db.Float() )
+    quantity = db.Column( db.Integer() )
+
+    def __init__(self,bid,title,author,price,quantity):
+        self.bid        = bid
+        self.title      = title
+        self.author     = author
+        self.price      = price
+        self.quantity   = quantity
+
+with app.app_context():
+    db.create_all()
+
+
+#**************************************************************************************
+# To Add data's into database  we need add reqparse.
+# We need this only for POST method
+add_book_parser = reqparse.RequestParser()
+add_book_parser.add_argument('author' , type=str ,  required =True)
+add_book_parser.add_argument('title'  , type=str ,  required =True)
+add_book_parser.add_argument('price'  , type=float, required =True)
+add_book_parser.add_argument('quantity',type=int ,  required =True)
+
+
+#**************************************************************************************
+# To Update data's into database  we need add reqparse.
+# We need this only for PUT method
+update_book_parser = add_book_parser.copy( )
+update_book_parser.remove_argument("title")     # we cannot update this field
+update_book_parser.remove_argument("author")    # we cannot update this field
+
+update_book_parser.replace_argument("price"   , type=float) # this can be update
+update_book_parser.replace_argument("quantity", type=int)   # this can be update
+
+
+#**************************************************************************************
+# trial class To welcome you
+class Welcome(Resource):
+    def get(self):
+        return "Welcome to siva"
+
+api.add_resource(Welcome,'/vanga')
+#**************************************************************************************
+# Creating a class for returning all Books in store
+resource_fields =   {
+                    'bid'       : fields.String,
+                    'title'     : fields.String,
+                    'author'    : fields.String,
+                    'price'     : fields.Float,
+                    'quantity'  : fields.Integer
+                    }
+
+#call all books
+class Books(Resource):
+    @marshal_with(resource_fields)
+    def get(self):
+        data = Mybook.query.all()
+        return data
+
+api.add_resource(Books,'/books/all')
+#**************************************************************************************
+# class to call  single book with their Id
+class SingleBook(Resource):
+    @marshal_with(resource_fields)
+    def get(self,bid):
+        bookdata = Mybook.query.get(bid)
+        print(bookdata)
+        if not bookdata:
+            abort(404,message="Book with ID: " +bid + ' not found ')
+        return bookdata , 200
+    
+
+    @marshal_with(resource_fields)
+    def post(self,bid):
+        args = add_book_parser.parse_args()
+
+        bookdata = Mybook.query.filter_by(bid=bid).first()
+        
+        print('book data',bookdata)
+
+        if  bookdata:
+            abort(412,message="Book with ID: " +bid + ' already exists ')
+        
+        bookdata = Mybook(
+                            bid      = bid,
+                            title    = args['title'],
+                            author   = args['author'],
+                            price    = args['price'],
+                            quantity = args['quantity']
+                        )
+        db.session.add(bookdata)
+        db.session.commit()
+
+        return bookdata , 200
+
+
+    @marshal_with(resource_fields)
+    def put(self,bid):
+        args = update_book_parser.parse_args()
+        bookdata = Mybook.query.filter_by(bid=bid).first()
+
+        if not bookdata:
+            abort(404,message="Book with ID: " +bid + ' doesnot exists ')
+        
+        for key,value in args.items():
+            if key =="price" :      #if key =="price"  and value :                
+                bookdata.price = value
+            if key == "quantity" :
+                bookdata.quantity = value
+
+        db.session.add(bookdata)
+        db.session.commit()
+
+        return bookdata , 200
+    
+    def delete(self,bid):
+        args = update_book_parser.parse_args()
+        bookdata = Mybook.query.filter_by(bid=bid).first()
+
+        if not bookdata:
+            abort(404,message="Book with ID: " +bid + ' doesnot exists ')
+
+        db.session.delete(bookdata)
+        db.session.commit()
+        
+        return "succesfully deleted",204
+
+
+
+
+api.add_resource(SingleBook,'/books/<string:bid>')
+
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+

@@ -1,0 +1,37 @@
+# paste this in python interpreter to run code
+# USe 2 class Extract data's
+
+from flask import Flask
+from flask_restful import Resource ,Api,request
+
+app = Flask(__name__ )
+api = Api (app )
+
+emp_info ={
+    101:{
+        'name':'siva',
+        'city':'chennai',
+        'gender':'male'
+        },
+    102:{
+        'name':'ajith',
+        'city':'Thirunelveli',
+        'gender':'male'
+        },
+    103:{
+        'name':'shakthi',
+        'city':'madurai',
+        'gender':'female'
+        }   
+}
+
+class Employee(Resource ):
+    def get ( self,eid):
+        return emp_info[eid]
+
+api.add_resource(Employee , '/emp/<int:eid>')
+
+if __name__ == "__main__":
+    app.run ( debug=True)
+
+# http://127.0.0.1:5000/emp/101     put in postman

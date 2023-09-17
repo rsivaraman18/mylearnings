@@ -1,0 +1,17 @@
+# paste this in python interpreter to run code
+# To Pass and get paramters
+
+from flask import Flask
+from flask_restful import Resource ,Api,request
+
+app = Flask(__name__ )
+api = Api (app )
+
+class Hello(Resource ):
+    def get ( self,name):
+        return {'msg' : 'Hello  ' +name }
+
+api.add_resource(Hello , '/greet/<string:name>')
+
+if __name__ == "__main__":
+    app.run ( debug=True)

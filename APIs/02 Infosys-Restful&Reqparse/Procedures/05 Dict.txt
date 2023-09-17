@@ -1,0 +1,65 @@
+# paste this in python interpreter to run code
+# USe 2 route link same time
+
+from flask import Flask
+from flask_restful import Resource ,Api,request
+
+app = Flask(__name__ )
+api = Api (app )
+
+emp_info ={
+    101:{
+        'name':'siva',
+        'city':'chennai',
+        'gender':'male'
+        },
+    102:{
+        'name':'ajith',
+        'city':'Thirunelveli',
+        'gender':'male'
+        },
+    103:{
+        'name':'shakthi',
+        'city':'madurai',
+        'gender':'female'
+        }   
+}
+
+std_info ={
+    501:{
+        'name':'Adithya cholan',
+        'city':'chennai',
+        'gender':'male'
+        },
+    502:{
+        'name':'Raja Raja cholan',
+        'city':'Thirunelveli',
+        'gender':'male'
+        },
+    503:{
+        'name':'Kundavi',
+        'city':'madurai',
+        'gender':'female'
+        }   
+}
+
+class Employee(Resource ):
+    def get ( self,eid):
+        return emp_info[eid]
+
+class student(Resource ):
+    def get ( self,sid):
+        return std_info[sid]
+
+api.add_resource(Employee , '/office/<int:eid>','/myoffice/<int:eid>')
+api.add_resource(student, '/school/<int:sid>','/myschool/<int:sid>')
+
+if __name__ == "__main__":
+    app.run ( debug=True)
+
+'''
+put in postman
+http://127.0.0.1:5000/office/101  
+http://127.0.0.1:5000/myoffice/101
+http://127.0.0.1:5000/myschool/502  
+http://127.0.0.1:5000/school/501

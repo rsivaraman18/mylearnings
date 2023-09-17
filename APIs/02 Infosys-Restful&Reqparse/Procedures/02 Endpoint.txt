@@ -1,0 +1,24 @@
+# paste this in python interpreter to run code
+# To use same class for 2 route links ..
+from flask import Flask
+from flask_restful import Resource ,Api,request
+
+app = Flask(__name__ )
+api = Api (app )                               
+
+
+class Employee(Resource ):
+    def get ( self,eid):
+        return 'Your Employee id is' +eid
+
+api.add_resource(Employee , '/office/<string:eid>' ,endpoint="employee1")
+api.add_resource(Employee, '/school/<string:eid>' ,endpoint="employee2")
+
+if __name__ == "__main__":
+    app.run ( debug=True)
+
+'''
+put in postman
+http://127.0.0.1:5000/school/100
+http://127.0.0.1:5000/office/100
+'''

@@ -1,0 +1,3 @@
+Ex 1 : Using list,append function
+Ex 2 : Using MYSQl DB & only using sql commands
+Ex 3 : taught bu udemy.

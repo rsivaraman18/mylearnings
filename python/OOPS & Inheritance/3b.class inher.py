@@ -36,7 +36,3 @@ emp1.Emp_det()
 print(emp1.age)
 
 
-
-
-
-#()

@@ -1,4 +1,3 @@
-#()
 x=100
 def fun1():
     global x
@@ -17,6 +16,5 @@ def fun3():
 #fun1()
 
 fun3()
-
 
 

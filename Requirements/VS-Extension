@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Welcome to Vscode</h1>
+    <h2>General Extension</h2>
+    <ol>
+      <li>Live server - Displays Live record on browser on save</li>
+      <li>Prettier - Format Code Alignment Especially on copy paste</li>
+      <ul>
+        <li>Install prettier</li>
+        <li>Go to vscode settings</li>
+        <li>Type Fomat on -> Tick Format on save and Format on Paste</li>
+        <li>Type Default Formatter -> Change to Prettier Code Format</li>
+      </ul>
+      <li>
+        Auto Rename tag -Automatically change close tag similar to open tag
+      </li>
+    </ol>
+  </body>
+</html>
+ 

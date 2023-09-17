@@ -1,0 +1,45 @@
+.container1{
+    padding-left: 10px;
+    display: flex;
+    background-color: cornflowerblue;
+
+}
+
+.container2{
+    padding-left: 10px;
+    display: flex;
+    background-color: #ec4ab8; 
+}
+
+.container3{
+    padding-left: 10px;
+    display: flex;
+    background-color: #f0b941; 
+}
+
+
+.box1{
+    flex-basis: 50%;
+    
+    
+}
+
+
+.box2{
+    flex-basis: 50%; 
+    
+}
+.myinputs{
+    line-height: 1.8;
+}
+
+button:hover{
+    color:red;
+
+}
+
+#countlabel{
+    display: block;
+    text-align:center;
+    font-size: 50px;
+}

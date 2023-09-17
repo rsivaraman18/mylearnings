@@ -1,1 +1,21 @@
+# Basic template for every Tkinter's
+from tkinter import *
+window = Tk()
+
+
+# We can Set Geometric Size of window
+window.title("Tkinter Basic Window")
+window.minsize(width=100,height=200)
+window.maxsize(width=600,height=600)
+
+
+
+# create Label box
+lab1 = Label(window,text='Siva learning',bg='blue',font='arial')
+''' 3 methods --> grid.place '''
+#lab1.grid(row=0,column=45)
+lab1.place(x=45,y=10)
+window = mainloop() # infinite loop .place at the bottom of code
+
+ent1 =Entry
 

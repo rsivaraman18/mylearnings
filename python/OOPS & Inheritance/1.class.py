@@ -16,3 +16,4 @@ class Phone:
 key = Phone()
 key.set_color('green')
 print(key.show_color())
+

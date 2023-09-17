@@ -1,5 +1,4 @@
 """Findall"""
-
 def test1( ):
     import re
     print("Find all occurence of word in a sentence" )

@@ -16,4 +16,8 @@ Installation Steps:
 1. Install Python
    Cmd : sudo apt install python3
    Out : Successfully Installed.
-2. Install Github
+2. Install Github.
+   Cmd : Cmd : sudo apt-get install git
+    
+   Out : Successfully Installed.
+   

@@ -1,0 +1,5 @@
+1. Go to Control Panel --> All Programs Items --> Program & Features
+2. Turn Windows Features on/OFF --> tick check box Windows Subsystem for Linux
+3. Allow to Restart
+4. Go to Microsoft Store --> Search Ubuntu --> Select Ubuntu -->GET --> LAUNCH.
+5. After Installation open Ubuntu-->Set Username & Password.

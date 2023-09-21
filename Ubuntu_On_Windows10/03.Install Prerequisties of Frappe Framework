@@ -24,4 +24,15 @@ Installation Steps:
 
    Cmd: git --version
    Out:git version 2.34.1
-   
+
+3. Install python3-dev.
+   Cmd : sudo apt-get install python3-dev
+   Out : Successfully Installed.
+
+4. Install setup tools & pip
+   Cmd : sudo apt-get install python3-setuptools python3-pip
+   Out : Successfully Installed.
+
+5. Install Virtual Environment
+   Cmd : sudo apt-get install virtualenv
+   Out : Successfully Installed.  

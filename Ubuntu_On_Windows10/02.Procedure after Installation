@@ -6,4 +6,6 @@
 4. If Not Available Install Python.
    Command: sudo apt install python3
    Output : Successfully Installed
-5.
+5. Use Clear Command to Clear Terminal
+   Command: clear
+6.

@@ -36,3 +36,10 @@ def RHT4(n):
             print('*'*i)
         else:
             print( ' '*(n-i)  +'*' + ' '*(i-2) + '*')
+
+
+
+RHT1(7)
+RHT2(7)
+RHT3(7)
+RHT4(7)

@@ -1,5 +1,7 @@
 Pre_Requisites
+
   1. Python 3.6+
+  2. Github 
   2. Node.js 14+
   3. Redis 5
   4. MariaDB 10.3.x  or Postgres 9.5.x
@@ -10,3 +12,6 @@ Pre_Requisites
   9.NGINX
 
 ******************************************************************
+Installation Steps:
+1. Install Python
+   Cmd : 

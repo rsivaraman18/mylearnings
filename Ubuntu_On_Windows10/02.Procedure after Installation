@@ -1,1 +1,4 @@
-
+1. Enter this Command to Update --> sudo apt-get update
+2. Upgrade --> sudo apt-get upgrade
+3. Check Python Available in PC/Laptop Ubuntu:
+   python3 --version

@@ -36,3 +36,7 @@ Installation Steps:
 5. Install Virtual Environment
    Cmd : sudo apt-get install virtualenv
    Out : Successfully Installed.  
+
+6. Install MariaDB Database 
+   Steps Link : https://cloudinfrastructureservices.co.uk/how-to-install-mariadb-on-ubuntu-22-04/
+

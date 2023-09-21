@@ -14,4 +14,5 @@ Pre_Requisites
 ******************************************************************
 Installation Steps:
 1. Install Python
-   Cmd : 
+   Cmd : sudo apt install python3
+   Out : Successfully Installed

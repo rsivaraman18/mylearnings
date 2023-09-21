@@ -1,18 +1,23 @@
 1. Enter this Command to Update --> sudo apt-get update
+
 2. Upgrade Ubuntu --> sudo apt-get upgrade
-3. Check Python Available in PC/Laptop Ubuntu:
-   Command : python3 --version
-   Output  : Python 3.10.12
-4. If Not Available Install Python.
-   Command: sudo apt install python3
-   Output : Successfully Installed
-5. Ubuntu Version Check
-   Command:  lsb_release -a
-   Output : No LSB modules are available.
+
+3. Ubuntu Version Check
+      Command:  lsb_release -a
+      Output : No LSB modules are available.
             Distributor ID: Ubuntu
             Description:    Ubuntu 22.04.3 LTS
             Release:        22.04
             Codename:       jammy
+
+4. Check Python Available in PC/Laptop Ubuntu:
+      Command : python3 --version
+      Output  : Python 3.10.12
+
+5. If Not Available Install Python.
+      Command: sudo apt install python3
+      Output : Successfully Installed
+
 
 6. Use Clear Command to Clear Terminal
    Command: clear

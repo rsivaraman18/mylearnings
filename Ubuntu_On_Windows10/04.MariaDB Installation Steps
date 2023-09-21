@@ -5,4 +5,5 @@ Link : https://cloudinfrastructureservices.co.uk/how-to-install-mariadb-on-ubunt
    Cmd : sudo apt update -y
    Cmd : sudo apt upgrade -y
 
-2.
+2. Install Neccessary Dependencies
+   Cmd : sudo apt install wget software-properties-common dirmngr ca-certificates apt-transport-https -y

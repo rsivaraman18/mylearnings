@@ -1,0 +1,12 @@
+Pre_Requisites
+  1. Python 3.6+
+  2. Node.js 14+
+  3. Redis 5
+  4. MariaDB 10.3.x  or Postgres 9.5.x
+  5.yarn 1.12+
+  6.pip 20+
+  7.wkhtmltopdf (version 0.12.5 with)
+  8.cron
+  9.NGINX
+
+******************************************************************

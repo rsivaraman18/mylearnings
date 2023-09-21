@@ -13,11 +13,15 @@ Pre_Requisites
 
 ******************************************************************
 Installation Steps:
+
 1. Install Python
    Cmd : sudo apt install python3
    Out : Successfully Installed.
+
 2. Install Github.
    Cmd : Cmd : sudo apt-get install git
-    
    Out : Successfully Installed.
+
+   Cmd: git --version
+   Out:git version 2.34.1
    

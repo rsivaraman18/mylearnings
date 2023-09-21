@@ -27,3 +27,12 @@ def RHT3(n):
         else:
             print( ' '*(n-i)  +'*' + ' '*(i-2) + '*')
 
+
+def RHT4(n):
+    for i in range(n,0,-1):
+        if i==1:
+            print(' '*(n-1)+'*')
+        elif (i==n):
+            print('*'*i)
+        else:
+            print( ' '*(n-i)  +'*' + ' '*(i-2) + '*')

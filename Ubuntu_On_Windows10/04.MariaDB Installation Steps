@@ -1,0 +1,8 @@
+Steps for Ubuntu 22.04 Version
+Link : https://cloudinfrastructureservices.co.uk/how-to-install-mariadb-on-ubuntu-22-04/
+
+1. Update the Ubuntu System 
+   Cmd : sudo apt update -y
+   Cmd : sudo apt upgrade -y
+
+2.

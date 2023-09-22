@@ -10,7 +10,7 @@ Pre_Requisites
   7.wkhtmltopdf (version 0.12.5 with)
   8.cron
   9.NGINX
-
+ 
 ******************************************************************
 Installation Steps:
 

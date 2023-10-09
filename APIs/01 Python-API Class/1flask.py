@@ -10,7 +10,7 @@ print("connection suuccess" )
 
 
 app = Flask( __name__) 
-
+ 
 @app.route('/' )
 def hello( ):
     return "Hii siva ,Welcome to new class"

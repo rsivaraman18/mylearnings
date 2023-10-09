@@ -1,4 +1,4 @@
-from flask import Flask,render_template,jsonify,request
+ from flask import Flask,render_template,jsonify,request
 
 import pymysql
 con =pymysql.connect(host = 'localhost',

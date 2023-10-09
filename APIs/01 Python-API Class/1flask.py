@@ -1,6 +1,6 @@
  from flask import Flask,render_template,jsonify,request
 
-import pymysql 
+import pymysql  
 con =pymysql.connect(host = 'localhost',
                              user = 'root', 
                              password='siva',

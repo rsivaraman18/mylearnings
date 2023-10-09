@@ -9,7 +9,7 @@ con =pymysql.connect(host = 'localhost',
 print("connection suuccess" )
 
 
-app = Flask( __name__)
+app = Flask( __name__) 
 
 @app.route('/' )
 def hello( ):

@@ -18,7 +18,6 @@ api = Api(app )
 
 jwt = JWT(app ,authenticate,identity )
 
-
 bakery_stall = [
             {
                 'id':1001,
